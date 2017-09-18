@@ -13,6 +13,7 @@ body {
 .hero-header {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
+
   /*background-color: #4E2E28;*/
   background-color: #0099ff;
   height: 140px;
@@ -52,6 +53,7 @@ body {
 	font-family: "Dosis", Helvetica;
 	-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 65% 100%);
 	clip-path: polygon(100% 0, 100% 0, 100% 100%, 65% 100%);
+	
   /*background-color: #4E2E28;*/
   background-color: #0099ff;
   height: 200px;
