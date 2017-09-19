@@ -89,8 +89,10 @@ body {
 .item {
 	margin: 0;
 	padding: 15px;
+	padding-bottom: 5px;
 	line-height: 1.5em;
-	margin-bottom: 15px;
+	margin-bottom: 5px;
+	height: 130px;
 }
 
 .item a {
@@ -115,7 +117,7 @@ body {
   object-fit: cover;
   width: 440px;
   height: 95px;
-  /*border: 3px solid #0099ff;*/
+  border: 1px solid #bbb;
 }
 
 a:hover {
@@ -126,4 +128,12 @@ a:hover {
 	border: 1px dashed white;
 	/*background-color: white;*/
 	/*color: #0099ff;*/
+}
+
+a {
+   outline: 0;
+}
+
+a:hover, a:active, a:focus {
+  /* styling for any way a link is about to be used */
 }
