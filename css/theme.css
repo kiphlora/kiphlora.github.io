@@ -6,9 +6,15 @@ html, body {
 }
 
 body {
-	display: flex;
-  flex-direction: column;
+	/*display: flex;*/
+  /*flex-direction: column;*/
 }
+
+.container {
+	min-height:100%;
+  position:relative;
+}
+
 
 .hero-header {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
@@ -47,21 +53,42 @@ body {
 	text-decoration: none;
 	color: white;
 }
-
+/*
 
 .hero-footer {
+	position: fixed;
+	right: 0;
+	bottom: 0;
+	width: 100%;
 	font-family: "Dosis", Helvetica;
-	-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 65% 100%);
-	clip-path: polygon(100% 0, 100% 0, 100% 100%, 65% 100%);
+	-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);
 	
-  /*background-color: #4E2E28;*/
   background-color: #0099ff;
   height: 200px;
   color: white;
 }
+*/
+
+
+
+.hero-footer {
+	position:absolute;
+  bottom:0;
+	width: 100%;
+	font-family: "Dosis", Helvetica;
+	-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);
+	clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);
+	
+  background-color: #0099ff;
+  height: 250px;
+  color: white;
+}
 
 .footer-info {
-	float: right;
+	position: absolute;
+	bottom: 0;
+	right: 0;
 	padding: 10px;
 	padding-top: 90px;
 	color: white;
@@ -128,12 +155,4 @@ a:hover {
 	border: 1px dashed white;
 	/*background-color: white;*/
 	/*color: #0099ff;*/
-}
-
-a {
-   outline: 0;
-}
-
-a:hover, a:active, a:focus {
-  /* styling for any way a link is about to be used */
 }
