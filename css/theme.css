@@ -6,8 +6,7 @@ html, body {
 }
 
 body {
-	/*display: flex;*/
-  /*flex-direction: column;*/
+	
 }
 
 .container {
@@ -20,7 +19,6 @@ body {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
 
-  /*background-color: #4E2E28;*/
   background-color: #0099ff;
   height: 140px;
   color: white;
@@ -44,33 +42,12 @@ body {
 
 .nav div {
 	padding: 5px;
-	/*padding-left: 10px;*/
-	/*padding-right: 10px;*/
-	/*border-radius: 20px;*/
 }
 
 .nav a {
 	text-decoration: none;
 	color: white;
 }
-/*
-
-.hero-footer {
-	position: fixed;
-	right: 0;
-	bottom: 0;
-	width: 100%;
-	font-family: "Dosis", Helvetica;
-	-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);
-	clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);
-	
-  background-color: #0099ff;
-  height: 200px;
-  color: white;
-}
-*/
-
-
 
 .hero-footer {
 	position:absolute;
@@ -153,6 +130,17 @@ a:hover {
 
 .active-link {
 	border: 1px dashed white;
-	/*background-color: white;*/
-	/*color: #0099ff;*/
+	
+}
+
+a {
+	outline: 0;
+}
+
+a:hover, a:active, a:focus {
+  /* styling for any way a link is about to be used */
+}
+
+a:active {
+	color: #999;
 }
