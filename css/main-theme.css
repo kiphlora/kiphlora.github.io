@@ -19,7 +19,8 @@ body {
 	-webkit-clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
   clip-path: polygon(0 0, 100% 0, 100% 65%, 0 100%);
 
-  background-color: #0099ff;
+  /*background-color: #0099ff;*/
+  background: linear-gradient(#0033ff, #0099ff);
   height: 140px;
   color: white;
 }
@@ -50,15 +51,19 @@ body {
 }
 
 .hero-footer {
-	position:absolute;
-  bottom:0;
+	/*position:absolute;*/
+  /*bottom:0;*/
 	width: 100%;
 	font-family: "Dosis", Helvetica;
-	-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);
-	clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);
+	/*-webkit-clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);*/
+	/*clip-path: polygon(100% 0, 100% 0, 100% 100%, 75% 100%);*/
+
+	-webkit-clip-path: polygon(0 30%, 100% 0, 100% 100%, 75% 100%);
+	clip-path: polygon(0 30%, 100% 0, 100% 100%, 0 100%);
 	
-  background-color: #0099ff;
-  height: 250px;
+  /*background-color: #0099ff;*/
+  background: linear-gradient(#0099ff, #0033ff);
+  height: 150px;
   color: white;
 }
 
@@ -82,12 +87,24 @@ body {
 	margin: 0;
 }
 
-.hero-content {
-	width: 960px;
+.hero-content-wrapper {
+	width: 100%;
+	min-height: calc(100vh - 150px - 140px);
 	margin: 0 auto;
-	flex: 1 0 auto;
+}
+
+.hero-content {
+	width: 80%;
+	margin: 0 auto;
+	/*flex: 1 0 auto;*/
 	display: flex;
 	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.about-content {
+	width: 80%;
+	margin: 0 auto;
 }
 
 .item {
@@ -128,6 +145,11 @@ a:hover {
 	text-decoration: underline;
 }
 
+.about-nav, .portfolio-nav {
+	border: 1px solid transparent;
+	text-align: center;
+}
+
 .active-link {
 	border: 1px dashed white;
 	
@@ -140,6 +162,8 @@ a {
 a:hover, a:active, a:focus {
   /* styling for any way a link is about to be used */
 }
+
+
 
 a:active {
 	color: #999;
